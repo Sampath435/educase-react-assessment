@@ -3,6 +3,9 @@
 This project is a **frontend authentication UI** built using **React, React Router, and TailwindCSS**.  
 It replicates the design provided in the assessment and includes **login, account creation, and account settings pages**.
 
+## Demo Link 
+  https://popx-auth-ui-phi.vercel.app/
+
 ## Live UI Features
 
 - Landing Page
