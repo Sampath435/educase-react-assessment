@@ -1,20 +1,110 @@
-<<<<<<< HEAD
-# React + Vite
+# PopX Authentication UI (React Assessment)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **frontend authentication UI** built using **React, React Router, and TailwindCSS**.  
+It replicates the design provided in the assessment and includes **login, account creation, and account settings pages**.
 
-Currently, two official plugins are available:
+## Live UI Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Landing Page
+- Login Page
+- Create Account Page
+- Account Settings Page
+- Form validation
+- LocalStorage based user data handling
+- Responsive mobile layout (375px design)
+- Navigation using React Router
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React (Vite)
+- React Router DOM
+- Tailwind CSS
+- Lucide React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# educase-react-assessment
->>>>>>> 529ea65e6ac3ae9bfe3f33ece79feb2e32e74902
+---
+
+## Project Structure
+
+src
+│
+├── pages
+│ ├── Landing.jsx
+│ ├── Login.jsx
+│ ├── CreateAccount.jsx
+│ └── AccountPage.jsx
+│
+├── assets
+│ └── userLogo.png
+│
+├── App.jsx
+└── main.jsx
+
+---
+
+## Features Implemented
+
+### Landing Page
+
+- Welcome screen
+- Navigation to Login or Create Account
+
+### Login Page
+
+- Email and password input
+- Login button enabled only when inputs are filled
+- Navigation to Account Page after login
+
+### Create Account Page
+
+- Full name
+- Phone number (numbers only, max 10 digits)
+- Email
+- Password
+- Company name
+- Agency selection (Yes / No)
+
+Form validation ensures all required fields are completed before account creation.
+
+### Account Settings Page
+
+Displays user information:
+
+- Profile image
+- Full name
+- Email
+- Account description
+
+User data is retrieved from **LocalStorage**.
+
+If LocalStorage is empty, default user data is shown.
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Sampath435/educase-react-assessment.git
+
+Go to project folder
+
+cd educase-react-assessment
+
+Install dependencies
+
+npm install
+
+Run development server
+
+npm run dev
+
+Author
+
+Sampath
+
+GitHub:
+https://github.com/Sampath435
+```
