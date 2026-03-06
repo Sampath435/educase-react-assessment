@@ -27,11 +27,12 @@ It replicates the design provided in the assessment and includes **login, accoun
 
 ## Project Structure
 
+```bash
 src
 │
-├── pages
-│ ├── Landing.jsx
-│ ├── Login.jsx
+├── components
+│ ├── LandingPage.jsx
+│ ├── LoginPage.jsx
 │ ├── CreateAccount.jsx
 │ └── AccountPage.jsx
 │
@@ -40,6 +41,7 @@ src
 │
 ├── App.jsx
 └── main.jsx
+```
 
 ---
 
