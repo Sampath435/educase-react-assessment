@@ -1,7 +1,19 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function LandingPage() {
   const navigate = useNavigate();
+  useEffect(() => {
+    const defaultUser = {
+      fullName: "Marry Doe",
+      phone: "9876543210",
+      email: "marry@gmail.com",
+      password: "123456",
+      company: "ABC Ltd",
+      agency: "yes",
+    };
+    localStorage.setItem("userData", JSON.stringify(defaultUser));
+  }, []);
 
   return (
     <div className="h-screen flex justify-center items-center bg-gray-100">
@@ -15,8 +27,6 @@ export default function LandingPage() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           </p>
         </div>
-
-        {/* Buttons */}
         <div className="flex flex-col gap-3">
           <button
             onClick={() => navigate("/signup")}

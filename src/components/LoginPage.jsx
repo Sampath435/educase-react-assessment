@@ -15,13 +15,10 @@ export default function LoginPage() {
 
     if (!storedUser) {
       alert("No account found. Please create an account first.");
-      return;
     }
 
     if (email === storedUser.email && password === storedUser.password) {
       navigate("/account");
-    } else {
-      alert("Invalid email or password");
     }
   };
 
@@ -42,8 +39,6 @@ export default function LoginPage() {
         <p className="text-gray-500 mb-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
-
-        {/* Email */}
         <div className="mb-4">
           <label className="text-purple-600 text-sm font-medium">
             Email Address
@@ -57,8 +52,6 @@ export default function LoginPage() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-
-        {/* Password */}
         <div className="mb-6">
           <label className="text-purple-600 text-sm font-medium">
             Password
@@ -72,10 +65,7 @@ export default function LoginPage() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-
-        {/* Login Button */}
         <button
-          disabled={!isValid}
           onClick={handleLogin}
           className={`w-full py-3 rounded-lg font-semibold text-white
           ${isValid ? "bg-purple-600 cursor-pointer" : "bg-gray-300 cursor-not-allowed"}`}
